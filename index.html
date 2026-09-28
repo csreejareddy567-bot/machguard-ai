@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MachGuard AI</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background: white;
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #2563eb;
+}
+
+h3 {
+    color: #374151;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.flow {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MachGuard AI</h1>
+    <p>Intelligent Machine Health Monitoring & Predictive Maintenance</p>
+    <p>AI + IoT + Cybersecurity</p>
+</header>
+
+<div class="container">
+
+<section>
+<h2>Abstract</h2>
+<p>
+MachGuard AI is an intelligent machine health monitoring and predictive
+maintenance system designed to detect abnormal machine conditions at an
+early stage. The system collects machine parameters such as temperature,
+vibration and electrical current through sensors and uses AI/ML techniques
+to analyze the collected information.
+</p>
+<p>
+The system classifies machine conditions as Normal, Warning or Critical and
+provides maintenance alerts and recommendations through a web dashboard.
+Historical machine information can also be stored to support future analysis.
+</p>
+</section>
+
+<section>
+<h2>1. Problem Statement</h2>
+<p>
+Unexpected machine failures can cause production downtime, maintenance
+delays and increased operational costs.
+</p>
+
+<ul>
+<li>Machine faults may be detected late.</li>
+<li>Manual inspection takes time.</li>
+<li>Maintenance records can be scattered.</li>
+<li>Repeated machine problems are difficult to track.</li>
+<li>Maintenance decisions may be delayed.</li>
+</ul>
+</section>
+
+<section>
+<h2>2. Proposed Solution</h2>
+<p>
+MachGuard AI continuously monitors machine parameters using IoT sensors.
+The collected information is processed and analyzed using AI/ML models to
+identify abnormal patterns.
+</p>
+
+<div class="flow">
+MONITOR → ANALYZE → PREDICT → ALERT
+</div>
+
+<p>
+The system combines real-time sensor information with historical machine
+data to support faster maintenance decisions.
+</p>
+</section>
+
+<section>
+<h2>3. How the System Works</h2>
+
+<h3>Step 1 — Data Collection</h3>
+<p>
+Sensors collect parameters such as temperature, vibration and electrical current.
+</p>
+
+<h3>Step 2 — IoT Communication</h3>
+<p>
+An IoT controller such as an ESP32 transfers sensor information to the application.
+</p>
+
+<h3>Step 3 — Data Processing</h3>
+<p>
+The collected data is cleaned and processed before AI analysis.
+</p>
+
+<h3>Step 4 — AI Analysis</h3>
+<p>
+The AI model analyzes sensor patterns and identifies abnormal machine behavior.
+</p>
+
+<h3>Step 5 — Machine Health Prediction</h3>
+<p>
+The machine condition is classified as:
+</p>
+
+<ul>
+<li>Normal</li>
+<li>Warning</li>
+<li>Critical</li>
+</ul>
+
+<h3>Step 6 — Alert Generation</h3>
+<p>
+When an abnormal condition is detected, the system generates an alert and
+provides a maintenance recommendation.
+</p>
+</section>
+
+<section>
+<h2>4. Key Features</h2>
+
+<ul>
+<li>Real-time machine monitoring</li>
+<li>AI-based anomaly detection</li>
+<li>Predictive maintenance support</li>
+<li>Machine health score</li>
+<li>Smart alerts</li>
+<li>Maintenance history</li>
+<li>Interactive dashboard</li>
+<li>Secure system access</li>
+</ul>
+</section>
+
+<section>
+<h2>5. Technology Stack</h2>
+
+<ul>
+<li><strong>Frontend:</strong> React + Vite</li>
+<li><strong>Backend:</strong> Python + FastAPI</li>
+<li><strong>AI/ML:</strong> Python, Pandas, Scikit-learn</li>
+<li><strong>Database:</strong> SQLite / PostgreSQL</li>
+<li><strong>IoT:</strong> ESP32 + Sensors</li>
+<li><strong>Communication:</strong> MQTT / REST API</li>
+<li><strong>Security:</strong> Authentication and secure API design</li>
+</ul>
+</section>
+
+<section>
+<h2>6. System Architecture</h2>
+
+<p>
+<strong>Hardware Layer:</strong> Temperature sensor, vibration sensor,
+current sensor and ESP32.
+</p>
+
+<p>
+<strong>Communication Layer:</strong> Wi-Fi, MQTT or REST API.
+</p>
+
+<p>
+<strong>Backend Layer:</strong> FastAPI, data processing and database.
+</p>
+
+<p>
+<strong>AI Layer:</strong> Anomaly detection, machine health classification
+and maintenance recommendation.
+</p>
+
+<p>
+<strong>Frontend Layer:</strong> React dashboard with live readings,
+graphs and alerts.
+</p>
+
+<p>
+<strong>Security Layer:</strong> Authentication, authorization and secure
+communication.
+</p>
+</section>
+
+<section>
+<h2>7. Innovation</h2>
+
+<p>
+MachGuard AI goes beyond simply displaying sensor values. It combines:
+</p>
+
+<div class="flow">
+Real-Time Data + AI Analysis + Historical Information + Maintenance Recommendations
+</div>
+
+<p>
+This enables the system to transform raw machine data into useful
+maintenance intelligence.
+</p>
+</section>
+
+<section>
+<h2>8. Expected Outcome</h2>
+
+<ul>
+<li>Early detection of abnormal machine conditions</li>
+<li>Better visibility into machine health</li>
+<li>Faster maintenance decisions</li>
+<li>Centralized maintenance history</li>
+<li>Real-time alerts</li>
+<li>Data-driven maintenance planning</li>
+</ul>
+</section>
+
+<section>
+<h2>9. Future Scope</h2>
+
+<ol>
+<li>Remaining Useful Life prediction</li>
+<li>Multi-machine monitoring</li>
+<li>Digital machine timeline</li>
+<li>Mobile maintenance alerts</li>
+<li>Edge AI</li>
+<li>Automated maintenance reports</li>
+</ol>
+</section>
+
+<section>
+<h2>10. Conclusion</h2>
+
+<p>
+MachGuard AI combines IoT sensors, artificial intelligence, data analytics
+and secure web technologies to create an intelligent machine monitoring
+platform.
+</p>
+
+<p>
+Instead of relying only on manual inspection or fixed maintenance schedules,
+the system continuously analyzes machine data and provides early warnings
+about abnormal conditions.
+</p>
+
+<p>
+The project demonstrates how AI and IoT can transform raw machine data into
+actionable maintenance information and provide a foundation for smarter
+industrial operations.
+</p>
+
+<h2>MachGuard AI — Monitor smarter. Detect earlier. Maintain better.</h2>
+
+</section>
+
+</div>
+
+<footer>
+MachGuard AI | AI + IoT + Cybersecurity
+</footer>
+
+</body>
+  </html>
